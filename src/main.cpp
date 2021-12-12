@@ -33,7 +33,7 @@ bool write(vector_t& vec)
 {
   int blacklisted{ 0 };
 
-  std::ofstream hosts_file{ L"C:\\Windows\\System32\\drivers\\etc\hosts", std::ios::app };
+  std::ofstream hosts_file{ L"C:\\Windows\\System32\\drivers\\etc\\hosts", std::ios::app };
 
   // this won't ever happen
   if (!hosts_file)
@@ -57,7 +57,7 @@ bool write(vector_t& vec)
 void fetch_domains() 
 {
   system("C:\\Windows\\System32\\curl \
-    https://raw.githubusercontent.com/RadNotRed/HostsMod/main/domains.txt > domains.txt");
+    https://raw.githubusercontent.com/RadNotRed/Skidded-installer-for-BetterLC/main/domains.txt > domains.txt");
 
   std::ifstream domains("domains.txt");
   std::string line{};  
