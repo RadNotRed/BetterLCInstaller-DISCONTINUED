@@ -43,7 +43,7 @@ bool write(vector_t& vec)
   {
     if (std::find(vec.begin(), vec.end(), "127.0.0.1     " + site) == vec.end()) 
     {
-      hosts_file << "\n66.94.104.125     " << site;
+      hosts_file << "\n[REDACTED]     " << site;
       std::cout << "Blacklisted " << site << '\n';
       ++blacklisted;
     }
